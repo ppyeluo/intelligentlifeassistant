@@ -1,4 +1,7 @@
 package com.sspu.intelligentlifeassistant.module;
 
-public class EntertainmentActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class EntertainmentActivity extends AppCompatActivity {
+
 }
