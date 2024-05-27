@@ -1,136 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingStart="16dp"
-    android:paddingEnd="16dp">
+    android:layout_height="match_parent">
 
-    <!-- 标题部分 -->
-    <TextView
+    <include
+        android:id="@+id/main_home"
+        layout="@layout/main_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="首页"
-        android:textSize="20sp"
-        android:textColor="@android:color/black"
-        android:gravity="center"
-        android:padding="12dp"/>
+        android:visibility="visible" />
 
-    <!-- 轮播图部分 -->
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="16dp">
-
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/viewPager"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <me.relex.circleindicator.CircleIndicator3
-            android:id="@+id/indicator"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:ci_width="8dp"
-            app:ci_height="8dp"
-            app:ci_margin="4dp"
-            app:ci_drawable="@drawable/indicator_drawable"
-            android:layout_gravity="bottom|center_horizontal"
-            android:layout_marginBottom="16dp" />
-
-    </FrameLayout>
-
-    <!-- 模块部分 -->
-    <GridLayout
+    <include
+        android:id="@+id/main_my"
+        layout="@layout/main_my"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:columnCount="2"
-        android:rowCount="3"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:alignmentMode="alignMargins"
-        android:columnOrderPreserved="false">
-
-        <!-- 资讯模块 -->
-        <include
-            layout="@layout/item_module"
-            android:id="@+id/news_module"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_marginHorizontal="8dp"
-            android:layout_marginVertical="8dp"
-            android:background="@drawable/news_module_bg" />
-
-        <!-- 日程管理模块 -->
-        <include
-            layout="@layout/item_module"
-            android:id="@+id/calendar_module"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_marginHorizontal="8dp"
-            android:layout_marginVertical="8dp"
-            android:background="@drawable/calendar_module_bg" />
-
-        <!-- 财务管理模块 -->
-        <include
-            layout="@layout/item_module"
-            android:id="@+id/finance_module"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_marginHorizontal="8dp"
-            android:layout_marginVertical="8dp"
-            android:background="@drawable/finance_module_bg" />
-
-        <!-- 记事本模块 -->
-        <include
-            layout="@layout/item_module"
-            android:id="@+id/notepad_module"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_marginHorizontal="8dp"
-            android:layout_marginVertical="8dp"
-            android:background="@drawable/notepad_module_bg" />
-
-        <!-- 天气预报模块 -->
-        <include
-            layout="@layout/item_module"
-            android:id="@+id/weather_module"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_marginHorizontal="8dp"
-            android:layout_marginVertical="8dp"
-            android:background="@drawable/weather_module_bg" />
-
-        <!-- 娱乐活动模块 -->
-        <include
-            layout="@layout/item_module"
-            android:id="@+id/entertainment_module"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_marginHorizontal="8dp"
-            android:layout_marginVertical="8dp"
-            android:background="@drawable/entertainment_module_bg" />
-
-    </GridLayout>
-<!--    底部菜单-->
+        android:visibility="gone" />
+    <!-- 底部菜单-->
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_alignParentBottom="true"
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        android:background="#f6acaa"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
         app:menu="@menu/bottom_nav_menu" />
-
-</LinearLayout>
+</RelativeLayout>

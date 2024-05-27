@@ -18,6 +18,7 @@ import androidx.viewpager2.widget.ViewPager2;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
 import com.bumptech.glide.request.RequestOptions;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.sspu.intelligentlifeassistant.module.EntertainmentActivity;
 import com.sspu.intelligentlifeassistant.module.FinanceActivity;
 import com.sspu.intelligentlifeassistant.module.NewsActivity;
@@ -33,6 +34,11 @@ import me.relex.circleindicator.CircleIndicator3;
 
 public class MainActivity extends AppCompatActivity {
     private ViewPager2 viewPager; // 轮播图的 ViewPager2 控件
+    private BottomNavigationView bottomNavigationView;
+
+    private View homeLayout;
+    private View myLayout;
+
     private List<Integer> imageList = Arrays.asList( // 轮播图的图片资源列表
             R.drawable.temp_main_top,
             R.drawable.temp_main_top2,
@@ -46,6 +52,25 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        homeLayout = findViewById(R.id.main_home);
+        myLayout = findViewById(R.id.main_my);
+
+        bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setSelectedItemId(R.id.nav_home);
+        bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
+            if(item.getItemId() == R.id.nav_home){
+                homeLayout.setVisibility(View.VISIBLE);
+                myLayout.setVisibility(View.GONE);
+                return true;
+            }else if(item.getItemId() == R.id.nav_profile){
+                homeLayout.setVisibility(View.GONE);
+                myLayout.setVisibility(View.VISIBLE);
+                return true;
+            }else{
+                return false;
+            }
+        });
 
         initCarousel();
         initModule();

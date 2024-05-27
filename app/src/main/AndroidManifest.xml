@@ -29,6 +29,7 @@
         <activity android:name=".module.FinanceActivity"/>
         <activity android:name=".module.finance.FinanceRecordActivity"/>
         <activity android:name=".module.NotepadActivity"/>
+        <activity android:name=".module.EntertainmentActivity"/>
     </application>
 
 </manifest>

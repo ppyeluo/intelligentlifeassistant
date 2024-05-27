@@ -55,7 +55,6 @@ public class NotepadActivity extends AppCompatActivity {
         // 加载所有记录
         loadAllRecords();
 
-
         // 设置点击事件监听器
         newNoteButton.setOnClickListener(v -> showNewNoteLayout());
         pendingNoteButton.setOnClickListener(v -> showPendingNoteLayout());
