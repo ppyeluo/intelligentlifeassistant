@@ -1,0 +1,26 @@
+[
+  {
+    "categoryId": 1,
+    "name": "经济日报",
+    "image": "category_1.jpg",
+    "description": "报道国内外经济形势,提供专业财经分析"
+  },
+  {
+    "categoryId": 2,
+    "name": "健康生活",
+    "image": "category_2.jpg",
+    "description": "分享健康饮食、运动和生活方式的小贴士"
+  },
+  {
+    "categoryId": 3,
+    "name": "科学前沿",
+    "image": "category_3.jpg",
+    "description": "介绍最新科技发展动态和科学研究成果"
+  },
+  {
+    "categoryId": 4,
+    "name": "体育快讯",
+    "image": "category_4.jpg",
+    "description": "及时报道国内外各项体育赛事的最新消息"
+  }
+]

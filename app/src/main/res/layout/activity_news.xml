@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/news_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 返回按钮 -->
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_margin="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"/>
+
+        <!-- 标题 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="资讯页面"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_below="@id/btn_back"/>
+    </LinearLayout>
+
+    <!-- 菜单栏 -->
+    <LinearLayout
+        android:id="@+id/menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/news_header">
+
+        <!-- 按钮1: 推荐 -->
+        <Button
+            android:id="@+id/btn_recommend"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="推荐"
+            android:onClick="onRecommendClick"/>
+
+        <!-- 按钮2: 热门 -->
+        <Button
+            android:id="@+id/btn_hot"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="热门"
+            android:onClick="onHotClick"/>
+
+        <!-- 按钮3: 分类 -->
+        <Button
+            android:id="@+id/btn_category"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="分类"
+            android:onClick="onCategoryClick"/>
+
+    </LinearLayout>
+
+    <!-- 新闻列表 -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/news_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/menu_layout"/>
+
+</RelativeLayout>

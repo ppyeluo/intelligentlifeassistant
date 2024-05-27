@@ -1,0 +1,292 @@
+[
+  {
+    "id": 1,
+    "title": "Breaking News: Earthquake Hits California",
+    "description": "A major earthquake struck the San Francisco Bay Area earlier today, causing widespread damage and leaving many without power.",
+    "image": "temp.jpg",
+    "content": "Detailed report on the earthquake incident, including information about the magnitude, epicenter, and ongoing relief efforts.",
+    "categoryId": 1,
+    "recommendationScore": 4.8,
+    "popularityScore": 9.2
+  },
+  {
+    "id": 2,
+    "title": "Tech Giant Announces Groundbreaking New Product",
+    "description": "Silicon Valley's leading tech company has unveiled a revolutionary new device that is set to disrupt the industry.",
+    "image": "temp2.jpg",
+    "content": "In-depth analysis of the new product's features, technical specifications, and potential market impact.",
+    "categoryId": 2,
+    "recommendationScore": 9.2,
+    "popularityScore": 7.9
+  },
+  {
+    "id": 3,
+    "title": "Sports Team Wins Big Game in Overtime",
+    "description": "The home team pulled off an incredible comeback in the final minutes, securing a thrilling victory in a close-fought match.",
+    "image": "temp3.jpg",
+    "content": "Detailed recap of the game, including key plays, statistics, and player interviews.",
+    "categoryId": 3,
+    "recommendationScore": 3.9,
+    "popularityScore": 9.9
+  },
+  {
+    "id": 4,
+    "title": "Celebrity Couple Announces Engagement",
+    "description": "Two of Hollywood's biggest stars have decided to take the next step in their relationship, much to the delight of their fans.",
+    "image": "temp2.jpg",
+    "content": "Background information on the couple, the details of their engagement, and reactions from fans and the entertainment industry.",
+    "categoryId": 4,
+    "recommendationScore": 9.6,
+    "popularityScore": 7.2
+  },
+  {
+    "id": 5,
+    "title": "World Leaders Meet for Historic Summit",
+    "description": "Heads of state from around the globe have gathered to discuss critical issues facing the international community.",
+    "image": "temp3.jpg",
+    "content": "Comprehensive coverage of the summit's agenda, key discussions, and potential outcomes.",
+    "categoryId": 1,
+    "recommendationScore": 7.5,
+    "popularityScore": 8.3
+  },
+  {
+    "id": 6,
+    "title": "New Medical Breakthrough Promises Improved Treatment",
+    "description": "Researchers have developed a groundbreaking treatment that could significantly enhance patient outcomes.",
+    "image": "temp3.jpg",
+    "content": "In-depth examination of the new treatment's mechanism, clinical trials, and potential impact on healthcare.",
+    "categoryId": 2,
+    "recommendationScore": 8.1,
+    "popularityScore": 6.7
+  },
+  {
+    "id": 7,
+    "title": "Beloved Local Landmark Undergoes Renovation",
+    "description": "A historic building in the heart of the city is set to undergo a major renovation project.",
+    "image": "temp2.jpg",
+    "content": "Details on the renovation plans, the building's cultural significance, and the community's involvement in the project.",
+    "categoryId": 3,
+    "recommendationScore": 5.2,
+    "popularityScore": 7.1
+  },
+  {
+    "id": 8,
+    "title": "Inspiring Story of Overcoming Adversity",
+    "description": "A local resident's journey of perseverance and determination has captivated the community.",
+    "image": "temp3.jpg",
+    "content": "Personal interviews, insights, and reflections on the individual's inspiring story of overcoming challenges.",
+    "categoryId": 4,
+    "recommendationScore": 7.9,
+    "popularityScore": 8.0
+  },
+  {
+    "id": 9,
+    "title": "Groundbreaking Scientific Discovery Unlocks New Possibilities",
+    "description": "Researchers have made a significant breakthrough that could lead to advancements in various fields.",
+    "image": "temp.jpg",
+    "content": "Detailed explanation of the discovery, its potential applications, and the scientists' journey to this milestone.",
+    "categoryId": 1,
+    "recommendationScore": 8.6,
+    "popularityScore": 7.4
+  },
+  {
+    "id": 10,
+    "title": "Local Community Rallies to Support Families in Need",
+    "description": "Neighbors have come together to provide aid and assistance to those facing challenging circumstances.",
+    "image": "temp.jpg",
+    "content": "Heartwarming stories of the community's efforts, the impact on the beneficiaries, and the spirit of togetherness.",
+    "categoryId": 2,
+    "recommendationScore": 6.3,
+    "popularityScore": 8.7
+  },
+  {
+    "id": 11,
+    "title": "Groundbreaking New Technology Transforms Industry",
+    "description": "A revolutionary new technology has emerged, poised to disrupt and reshape a major industry.",
+    "image": "temp.jpg",
+    "content": "Comprehensive analysis of the technology's features, its potential impact, and the companies leading the charge.",
+    "categoryId": 3,
+    "recommendationScore": 7.8,
+    "popularityScore": 7.2
+  },
+  {
+    "id": 12,
+    "title": "Inspiring Athlete Overcomes Injury to Achieve Success",
+    "description": "A talented athlete's journey of recovery and determination has captivated fans and the sports community.",
+    "image": "temp.jpg",
+    "content": "Personal interviews, insights, and reflections on the athlete's inspiring story of overcoming adversity.",
+    "categoryId": 4,
+    "recommendationScore": 8.2,
+    "popularityScore": 8.5
+  },
+  {
+    "id": 13,
+    "title": "Groundbreaking Scientific Advancement Paves the Way for New Discoveries",
+    "description": "Researchers have made a significant breakthrough that could lead to advancements in various fields.",
+    "image": "temp.jpg",
+    "content": "Detailed explanation of the discovery, its potential applications, and the scientists' journey to this milestone.",
+    "categoryId": 1,
+    "recommendationScore": 7.9,
+    "popularityScore": 7.6
+  },
+  {
+    "id": 14,
+    "title": "Local Community Comes Together to Celebrate Diversity",
+    "description": "A vibrant community event showcases the rich cultural diversity and traditions of the region.",
+    "image": "temp.jpg",
+    "content": "Highlights of the event, including performances, exhibits, and the spirit of inclusivity and celebration.",
+    "categoryId": 2,
+    "recommendationScore": 6.7,
+    "popularityScore": 8.1
+  },
+  {
+    "id": 15,
+    "title": "Groundbreaking Technological Innovation Disrupts Industry",
+    "description": "A revolutionary new technology has emerged, poised to transform and reshape a major industry.",
+    "image": "temp.jpg",
+    "content": "Comprehensive analysis of the technology's features, its potential impact, and the companies leading the charge.",
+    "categoryId": 3,
+    "recommendationScore": 8.0,
+    "popularityScore": 7.5
+  },
+  {
+    "id": 16,
+    "title": "Inspiring Entrepreneur Overcomes Challenges to Build Successful Business",
+    "description": "A local entrepreneur's journey of resilience and determination has inspired the community.",
+    "image": "temp.jpg",
+    "content": "Personal interviews, insights, and reflections on the entrepreneur's path to success, despite facing various obstacles.",
+    "categoryId": 4,
+    "recommendationScore": 7.6,
+    "popularityScore": 8.3
+  },
+  {
+    "id": 17,
+    "title": "Groundbreaking Medical Advancement Improves Patient Outcomes",
+    "description": "Researchers have developed a revolutionary treatment that could significantly enhance healthcare.",
+    "image": "temp.jpg",
+    "content": "In-depth examination of the new treatment's mechanism, clinical trials, and potential impact on the medical field.",
+    "categoryId": 2,
+    "recommendationScore": 8.5,
+    "popularityScore": 7.0
+  },
+  {
+    "id": 18,
+    "title": "Local Community Rallies to Preserve Historical Landmark",
+    "description": "Residents have come together to protect and restore a cherished piece of their city's heritage.",
+    "image": "temp.jpg",
+    "content": "Details on the community's efforts, the significance of the landmark, and the plans for its preservation.",
+    "categoryId": 3,
+    "recommendationScore": 6.9,
+    "popularityScore": 8.2
+  },
+  {
+    "id": 19,
+    "title": "Inspiring Athlete Defies Odds to Achieve Olympic Glory",
+    "description": "A talented athlete's journey of overcoming challenges and reaching the pinnacle of their sport.",
+    "image": "temp.jpg",
+    "content": "Personal interviews, insights, and reflections on the athlete's inspiring story of triumph against adversity.",
+    "categoryId": 4,
+    "recommendationScore": 8.7,
+    "popularityScore": 8.8
+  },
+  {
+    "id": 20,
+    "title": "Groundbreaking Scientific Collaboration Leads to Breakthrough Discovery",
+    "description": "Researchers from diverse fields have come together to make a significant scientific advancement.",
+    "image": "temp.jpg",
+    "content": "Detailed explanation of the discovery, its potential applications, and the collaborative process that led to this milestone.",
+    "categoryId": 1,
+    "recommendationScore": 8.1,
+    "popularityScore": 7.8
+  },
+  {
+    "id": 21,
+    "title": "Local Community Embraces Sustainable Living Initiative",
+    "description": "A grassroots movement has been driving environmental awareness and eco-friendly practices in the region.",
+    "image": "temp.jpg",
+    "content": "Highlights of the community's efforts, the initiatives being implemented, and the impact on local sustainability.",
+    "categoryId": 2,
+    "recommendationScore": 7.2,
+    "popularityScore": 8.4
+  },
+  {
+    "id": 22,
+    "title": "Groundbreaking Technological Advancement Transforms Industry Landscape",
+    "description": "A revolutionary new technology has emerged, poised to disrupt and reshape a major industry.",
+    "image": "temp.jpg",
+    "content": "Comprehensive analysis of the technology's features, its potential impact, and the companies leading the charge.",
+    "categoryId": 3,
+    "recommendationScore": 8.3,
+    "popularityScore": 7.7
+  },
+  {
+    "id": 23,
+    "title": "Inspiring Charity Initiative Transforms Lives of Underprivileged Children",
+    "description": "A local organization's efforts to provide education, healthcare, and opportunities to underserved communities.",
+    "image": "temp.jpg",
+    "content": "Heartwarming stories of the initiative's impact, the beneficiaries' journeys, and the community's involvement.",
+    "categoryId": 4,
+    "recommendationScore": 7.9,
+    "popularityScore": 8.6
+  },
+  {
+    "id": 24,
+    "title": "Groundbreaking Medical Breakthrough Promises Improved Cancer Treatment",
+    "description": "Researchers have developed a novel approach that could significantly enhance cancer patients' outcomes.",
+    "image": "temp.jpg",
+    "content": "In-depth examination of the new treatment's mechanism, clinical trials, and potential impact on cancer care.",
+    "categoryId": 2,
+    "recommendationScore": 8.8,
+    "popularityScore": 7.3
+  },
+  {
+    "id": 25,
+    "title": "Local Community Celebrates Vibrant Cultural Festival",
+    "description": "A annual celebration showcases the rich diversity and traditions of the region.",
+    "image": "temp.jpg",
+    "content": "Highlights of the festival, including performances, exhibits, and the spirit of inclusivity and celebration.",
+    "categoryId": 3,
+    "recommendationScore": 7.1,
+    "popularityScore": 8.9
+  },
+  {
+    "id": 26,
+    "title": "Inspiring Athlete Overcomes Setbacks to Achieve Championship Title",
+    "description": "A talented athlete's journey of resilience and determination has captivated fans and the sports community.",
+    "image": "temp.jpg",
+    "content": "Personal interviews, insights, and reflections on the athlete's inspiring story of overcoming obstacles.",
+    "categoryId": 4,
+    "recommendationScore": 8.4,
+    "popularityScore": 8.0
+  },
+  {
+    "id": 27,
+    "title": "Groundbreaking Scientific Collaboration Unlocks Mysteries of the Universe",
+    "description": "Researchers from around the globe have come together to make a significant astronomical discovery.",
+    "image": "temp.jpg",
+    "content": "Detailed explanation of the discovery, its implications for our understanding of the cosmos, and the collaborative process.",
+    "categoryId": 1,
+    "recommendationScore": 8.2,
+    "popularityScore": 7.9
+  },
+  {
+    "id": 28,
+    "title": "Local Community Rallies to Support Small Businesses",
+    "description": "Residents have launched initiatives to boost the local economy and help small businesses thrive.",
+    "image": "temp.jpg",
+    "content": "Highlights of the community's efforts, the impact on local businesses, and the spirit of entrepreneurship.",
+    "categoryId": 2,
+    "recommendationScore": 9.9,
+    "popularityScore": 8.5
+  },
+  {
+    "id": 29,
+    "title": "Groundbreaking Technological Innovation Transforms Daily Life",
+    "description": "A revolutionary new technology has emerged, poised to reshape the way we live and work.",
+    "image": "temp.jpg",
+    "content": "Comprehensive analysis of the technology's features, its potential impact on various aspects of daily life, and the companies leading the charge.",
+    "categoryId": 3,
+    "recommendationScore": 2.3,
+    "popularityScore": 9.1
+  }
+]
