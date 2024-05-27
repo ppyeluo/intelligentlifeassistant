@@ -26,6 +26,8 @@
         <activity android:name=".module.news.NewsCategoryDetailActivity"/>
         <activity android:name=".module.ScheduleManagementActivity"/>
         <activity android:name=".module.WeatherActivity"/>
+        <activity android:name=".module.FinanceActivity"/>
+        <activity android:name=".module.finance.FinanceRecordActivity"/>
     </application>
 
 </manifest>

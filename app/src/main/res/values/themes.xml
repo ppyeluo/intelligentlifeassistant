@@ -7,4 +7,5 @@
 
 <!--    <style name="Theme.IntelligentLifeAssistant" parent="Base.Theme.IntelligentLifeAssistant" />-->
     <style name="Theme.IntelligentLifeAssistant" parent="Theme.AppCompat.Light.NoActionBar" />
+
 </resources>

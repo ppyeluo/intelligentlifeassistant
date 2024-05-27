@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 页面顶部 -->
+    <LinearLayout
+        android:id="@+id/news_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- 返回按钮 -->
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_margin="16dp" />
+
+        <!-- 标题 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="财务管理"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- 收入/支出切换 -->
+    <LinearLayout
+        android:id="@+id/menu_change"
+        android:layout_below="@+id/news_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"
+        android:paddingStart="16dp">
+
+        <TextView
+            android:id="@+id/btn_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收入"
+            android:textSize="16sp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/btn_expense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支出"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <!-- 收入页面 -->
+    <ScrollView
+        android:layout_below="@+id/menu_change"
+        android:layout_above="@+id/navigation_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/income_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="金额"
+                    android:textSize="16sp" />
+                <EditText
+                    android:id="@+id/expense_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="输入支出金额"
+                    android:padding="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/search_box_background"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:drawablePadding="12dp"
+                    android:singleLine="true"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="分类"
+                    android:textSize="16sp" />
+                <RadioGroup
+                    android:id="@+id/income_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RadioButton
+                        android:id="@+id/income_category_salary"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="工资" />
+                    <RadioButton
+                        android:id="@+id/income_category_gift"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="红包" />
+                    <RadioButton
+                        android:id="@+id/income_category_subsidy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="补贴" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="备注"
+                    android:textSize="16sp" />
+                <EditText
+                    android:id="@+id/income_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="输入备注信息"
+                    android:padding="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/search_box_background"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:drawablePadding="12dp"
+                    android:singleLine="true"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_income_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="保存"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                android:background="@color/accent"
+                android:paddingVertical="12dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+    <!-- 支出页面 -->
+    <ScrollView
+        android:layout_below="@+id/menu_change"
+        android:layout_above="@+id/navigation_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/expense_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="金额"
+                    android:textSize="16sp" />
+                <EditText
+                    android:id="@+id/income_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="输入支出金额"
+                    android:padding="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/search_box_background"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:drawablePadding="12dp"
+                    android:singleLine="true"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="分类"
+                    android:textSize="16sp" />
+                <RadioGroup
+                    android:id="@+id/expense_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RadioButton
+                        android:id="@+id/expense_category_shopping"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="购物" />
+                    <RadioButton
+                        android:id="@+id/expense_category_entertainment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="娱乐" />
+                    <RadioButton
+                        android:id="@+id/expense_category_transportation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="交通" />
+                    <RadioButton
+                        android:id="@+id/expense_category_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="服务" />
+                    <RadioButton
+                        android:id="@+id/expense_category_living"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="生活缴费" />
+                    <RadioButton
+                        android:id="@+id/expense_category_dining"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="餐饮" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="备注"
+                    android:textSize="16sp" />
+                <EditText
+                    android:id="@+id/expense_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:hint="输入备注信息"
+                    android:padding="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="24dp"
+                    android:background="@drawable/search_box_background"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    android:drawablePadding="12dp"
+                    android:singleLine="true"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_expense_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="保存"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/white"
+                android:background="@color/accent"
+                android:paddingVertical="12dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 底部导航菜单 -->
+    <LinearLayout
+        android:id="@+id/navigation_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_ledger"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="记账本"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:padding="12dp"
+            android:background="#3e8140"/>
+
+        <TextView
+            android:id="@+id/tv_finance_record"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="财务记录"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:padding="12dp"
+            android:background="#4CAF50"  />
+    </LinearLayout>
+</RelativeLayout>

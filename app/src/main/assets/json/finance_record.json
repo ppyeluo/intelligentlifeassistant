@@ -1,0 +1,72 @@
+[
+  {
+    "type": "餐饮",
+    "image": "canyin.jpg",
+    "note": "工作午餐",
+    "amount": 35.50,
+    "isExpense": true
+  },
+  {
+    "type": "购物",
+    "image": "gouwu.jpg",
+    "note": "买新衣服",
+    "amount": 199.99,
+    "isExpense": true
+  },
+  {
+    "type": "工资",
+    "image": "gongzi.jpg",
+    "note": "本月工资",
+    "amount": 8000.00,
+    "isExpense": false
+  },
+  {
+    "type": "水电费",
+    "image": "shuidian.jpg",
+    "note": "5月水电费",
+    "amount": 123.45,
+    "isExpense": true
+  },
+  {
+    "type": "交通",
+    "image": "jiaotong.jpg",
+    "note": "公交地铁费",
+    "amount": 15.20,
+    "isExpense": true
+  },
+  {
+    "type": "娱乐",
+    "image": "yule.jpg",
+    "note": "看电影",
+    "amount": 58.00,
+    "isExpense": true
+  },
+  {
+    "type": "医疗",
+    "image": "yiliao.jpg",
+    "note": "门诊费用",
+    "amount": 150.00,
+    "isExpense": true
+  },
+  {
+    "type": "红包",
+    "image": "hongbao.jpg",
+    "note": "朋友结婚红包",
+    "amount": 500.00,
+    "isExpense": true
+  },
+  {
+    "type": "投资",
+    "image": "touzi.jpg",
+    "note": "美股交易",
+    "amount": 2000.00,
+    "isExpense": false
+  },
+  {
+    "type": "保险",
+    "image": "baoxian.jpg",
+    "note": "年度保费",
+    "amount": 1200.00,
+    "isExpense": true
+  }
+]
