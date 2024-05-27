@@ -25,6 +25,7 @@
         <activity android:name=".module.news.NewsDetailActivity"/>
         <activity android:name=".module.news.NewsCategoryDetailActivity"/>
         <activity android:name=".module.ScheduleManagementActivity"/>
+        <activity android:name=".module.WeatherActivity"/>
     </application>
 
 </manifest>

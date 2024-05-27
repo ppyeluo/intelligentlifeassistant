@@ -1,0 +1,50 @@
+[
+  {
+    "cityName": "北京",
+    "weatherStatus": "阴天",
+    "temperatureRange": "气温10°C~22°C",
+    "imageResource": "beijing.jpg"
+  },
+  {
+    "cityName": "上海",
+    "weatherStatus": "多云转晴",
+    "temperatureRange": "气温18°C~27°C",
+    "imageResource": "shanghai.jpg"
+  },
+  {
+    "cityName": "广州",
+    "weatherStatus": "阵雨转多云",
+    "temperatureRange": "气温20°C~26°C",
+    "imageResource": "guangzhou.jpg"
+  },
+  {
+    "cityName": "深圳",
+    "weatherStatus": "小雨",
+    "temperatureRange": "气温18°C~24°C",
+    "imageResource": "shenzhen.jpg"
+  },
+  {
+    "cityName": "香港",
+    "weatherStatus": "雷阵雨",
+    "temperatureRange": "气温21°C~25°C",
+    "imageResource": "xianggang.jpg"
+  },
+  {
+    "cityName": "呼和浩特",
+    "weatherStatus": "晴天",
+    "temperatureRange": "气温6°C~18°C",
+    "imageResource": "huhehaote.jpg"
+  },
+  {
+    "cityName": "拉萨",
+    "weatherStatus": "大雪",
+    "temperatureRange": "气温-5°C~3°C",
+    "imageResource": "lasa.jpg"
+  },
+  {
+    "cityName": "西安",
+    "weatherStatus": "多云转晴",
+    "temperatureRange": "气温12°C~20°C",
+    "imageResource": "xian.jpg"
+  }
+]

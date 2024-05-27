@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <!-- 第一个城市 -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginEnd="8dp"
+        android:background="#F0F0F0">
+
+        <!-- 城市图片 -->
+        <ImageView
+            android:id="@+id/city_image_1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/temp_main_top2" />
+
+        <!-- 城市名称 -->
+        <TextView
+            android:id="@+id/city_name_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上海"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="5dp" />
+
+        <!-- 天气状况 -->
+        <TextView
+            android:id="@+id/weather_status_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="多云"
+            android:textSize="12sp"
+            android:layout_marginStart="5dp"  />
+
+        <!-- 温度范围 -->
+        <TextView
+            android:id="@+id/temperature_range_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25°C"
+            android:textSize="11sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp" />
+
+    </LinearLayout>
+
+    <!-- 第二个城市 -->
+    <LinearLayout
+        android:id="@+id/weather2_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="8dp"
+        android:background="#F0F0F0">
+
+        <!-- 城市图片 -->
+        <ImageView
+            android:id="@+id/city_image_2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/temp_main_top2" />
+
+        <!-- 城市名称 -->
+        <TextView
+            android:id="@+id/city_name_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="北京"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="5dp" />
+
+        <!-- 天气状况 -->
+        <TextView
+            android:id="@+id/weather_status_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="阴"
+            android:textSize="12sp"
+            android:layout_marginStart="5dp" />
+
+        <!-- 温度范围 -->
+        <TextView
+            android:id="@+id/temperature_range_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最高气温24°C，最低气温18°C"
+            android:textSize="11sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
