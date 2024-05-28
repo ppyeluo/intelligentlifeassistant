@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/news_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- 返回按钮 -->
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_margin="16dp" />
+
+        <!-- 标题 -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="娱乐"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <!-- 菜单栏 -->
+    <LinearLayout
+        android:layout_below="@+id/news_header"
+        android:id="@+id/menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@color/white">
+
+        <!-- 按钮1: 推荐 -->
+        <Button
+            android:id="@+id/btn_recommend"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:text="推荐"
+            android:textSize="14sp"
+            android:background="@drawable/button_background"
+            android:layout_margin="4dp" />
+
+        <!-- 按钮2: 热门 -->
+        <Button
+            android:id="@+id/btn_hot"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:text="热门"
+            android:textSize="14sp"
+            android:background="@drawable/button_background"
+            android:layout_margin="4dp" />
+
+        <!-- 按钮3: 分类 -->
+        <Button
+            android:id="@+id/btn_category"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:text="分类"
+            android:textSize="14sp"
+            android:background="@drawable/button_background"
+            android:layout_margin="4dp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/menu_layout"
+            android:id="@+id/recommend_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!--    &lt;!&ndash; 推荐 &ndash;&gt;-->
+<!--    <include-->
+<!--        android:layout_below="@+id/menu_layout"-->
+<!--        android:id="@+id/recommend"-->
+<!--        layout="@layout/entertainment_recommend"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:visibility="visible"/>-->
+<!--    &lt;!&ndash; 热门 &ndash;&gt;-->
+<!--    <include-->
+<!--        android:layout_below="@+id/menu_layout"-->
+<!--        android:id="@+id/hot"-->
+<!--        layout="@layout/entertainment_hot"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:visibility="gone"/>-->
+<!--    &lt;!&ndash; 分类 &ndash;&gt;-->
+<!--    <include-->
+<!--        android:layout_below="@+id/menu_layout"-->
+<!--        android:id="@+id/category"-->
+<!--        layout="@layout/entertainment_category"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:visibility="gone"/>-->
+
+</RelativeLayout>

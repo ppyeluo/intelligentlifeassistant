@@ -4,12 +4,11 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Serializable;
 
-public class NewsItem implements Serializable {
+public class EntertainmentItem  implements Serializable {
     private int id;
     private String image;
     private String title;
@@ -19,7 +18,7 @@ public class NewsItem implements Serializable {
     private float recommendationScore;
     private float popularityScore;
 
-    public NewsItem(int id, String image, String title, String description, String content, int categoryId, float recommendationScore, float popularityScore) {
+    public EntertainmentItem(int id, String image, String title, String description, String content, int categoryId, float recommendationScore, float popularityScore) {
         this.id = id;
         this.image = image;
         this.title = title;
@@ -63,7 +62,7 @@ public class NewsItem implements Serializable {
     }
     public Bitmap getImage(Context context) {
         try {
-            InputStream is = context.getAssets().open("images/news/" + image);
+            InputStream is = context.getAssets().open("images/entertainment/" + image);
             return BitmapFactory.decodeStream(is);
         } catch (IOException e) {
             e.printStackTrace();
@@ -71,4 +70,3 @@ public class NewsItem implements Serializable {
         }
     }
 }
-

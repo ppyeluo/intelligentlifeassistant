@@ -50,7 +50,7 @@ public class CategoryItem implements Serializable {
 
     public Bitmap getImage(Context context) {
         try {
-            InputStream is = context.getAssets().open("images/" + image);
+            InputStream is = context.getAssets().open("images/category/" + image);
             return BitmapFactory.decodeStream(is);
         } catch (IOException e) {
             e.printStackTrace();

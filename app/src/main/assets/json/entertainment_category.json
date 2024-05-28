@@ -1,0 +1,26 @@
+[
+  {
+    "categoryId": 1,
+    "name": "明星",
+    "image": "category_6_1.jpg",
+    "description": "明星"
+  },
+  {
+    "categoryId": 2,
+    "name": "影视",
+    "image": "category_6_2.jpg",
+    "description": "影视"
+  },
+  {
+    "categoryId": 3,
+    "name": "音乐",
+    "image": "category_6_3.jpg",
+    "description": "音乐"
+  },
+  {
+    "categoryId": 4,
+    "name": "演出",
+    "image": "category_6_4.jpg",
+    "description": "演出"
+  }
+]

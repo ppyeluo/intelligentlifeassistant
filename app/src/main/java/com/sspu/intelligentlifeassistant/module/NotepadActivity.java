@@ -3,6 +3,7 @@ package com.sspu.intelligentlifeassistant.module;
 import android.content.res.AssetManager;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
