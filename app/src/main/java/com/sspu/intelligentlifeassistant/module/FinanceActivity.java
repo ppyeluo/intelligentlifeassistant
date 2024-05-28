@@ -47,6 +47,16 @@ public class FinanceActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         });
+        // 返回按钮
+        View customButton = findViewById(R.id.btn_back);
+
+        // 为按钮设置点击事件监听器
+        customButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish(); // 返回到上一个页面
+            }
+        });
     }
 
     private void setTextClickListeners() {

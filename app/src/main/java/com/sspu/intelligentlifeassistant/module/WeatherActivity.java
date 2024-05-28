@@ -1,6 +1,7 @@
 package com.sspu.intelligentlifeassistant.module;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -40,6 +41,17 @@ public class WeatherActivity extends AppCompatActivity {
 
         // 加载初始的热门城市天气数据
         loadHotCities();
+
+        // 返回按钮
+        View customButton = findViewById(R.id.btn_back);
+
+        // 为按钮设置点击事件监听器
+        customButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish(); // 返回到上一个页面
+            }
+        });
     }
 
     private void loadHotCities() {

@@ -41,6 +41,7 @@ public class ScheduleManagementActivity extends AppCompatActivity {
 
         // 初始化选中"按日期"按钮
         setSelectedButton(byDateButton);
+
     }
 
     private void showNewScheduleDialog() {

@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -57,8 +58,6 @@ public class NewsActivity extends AppCompatActivity implements View.OnClickListe
         loadNewsData();
         loadCategoryData();
         showRecommendedNews();
-
-
 
         // 返回按钮
         View customButton = findViewById(R.id.btn_back);

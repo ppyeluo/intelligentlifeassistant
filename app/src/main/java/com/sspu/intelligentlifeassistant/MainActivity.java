@@ -40,9 +40,9 @@ public class MainActivity extends AppCompatActivity {
     private View myLayout;
 
     private List<Integer> imageList = Arrays.asList( // 轮播图的图片资源列表
-            R.drawable.temp_main_top,
-            R.drawable.temp_main_top2,
-            R.drawable.temp_main_top3
+            R.drawable.carousel_1,
+            R.drawable.carousel_3,
+            R.drawable.carousel_2
     );
     private ViewPagerAdapter adapter; // 轮播图的适配器
     private CircleIndicator3 indicator; // 轮播图的指示点控件

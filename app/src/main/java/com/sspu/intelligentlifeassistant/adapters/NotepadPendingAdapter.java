@@ -1,5 +1,6 @@
 package com.sspu.intelligentlifeassistant.adapters;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -48,18 +49,16 @@ public class NotepadPendingAdapter extends RecyclerView.Adapter<NotepadPendingAd
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         // 记录项视图的控件
-        private TextView tv_title, tv_content;
+        private TextView tv_title;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             tv_title = itemView.findViewById(R.id.tv_title);
-            tv_content = itemView.findViewById(R.id.tv_content);
         }
 
         public void bind(NotepadItem record) {
             // 将记录项数据绑定到视图控件
-            tv_title.setText(record.getTitle());
-            tv_content.setText(record.getContent());
+            tv_title.setText(record.getTitle()+"："+record.getContent());
         }
     }
 }

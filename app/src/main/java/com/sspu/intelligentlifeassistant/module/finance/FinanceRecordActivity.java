@@ -3,6 +3,7 @@ package com.sspu.intelligentlifeassistant.module.finance;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -60,6 +61,16 @@ public class FinanceRecordActivity extends AppCompatActivity {
         });
         findViewById(R.id.tv_finance_record).setOnClickListener(v -> {
             // 当前就是财务记录页面,无需跳转
+        });
+        // 返回按钮
+        View customButton = findViewById(R.id.btn_back);
+
+        // 为按钮设置点击事件监听器
+        customButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish(); // 返回到上一个页面
+            }
         });
     }
 
